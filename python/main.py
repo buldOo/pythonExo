@@ -18,4 +18,5 @@ if __name__ == '__main__':
         else:
             print("L'annee n'est pas une annee bissextile!")
 
-    print(functions.ascii_to_binary(64))
+    my_input = [64, 64, 65]
+    print(functions.ascii_to_binary(my_input))
