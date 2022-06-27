@@ -16,44 +16,55 @@
 
 ## Story 1
 *** 
-Créez une chaine de charactere contenant "ABCD"
+En tant que développeur je veux créer un string contenant "ABCD"
+Afin de pouvoir appliquer des modifications a cette chaine
 
 ## Story 2
 *** 
-Transformez la chaine de charactere en une liste de chaine de character
+En tant que Développeur je veux transformer un string en list
+Afin de pouvoir transformez ma chaine de charactere en une liste de chaine de character
 
 ## Story 3
 *** 
-Transformez les chaines de charactere ASCII en Décimale
+En tant que Développeur je veux transformer un string ASCII en Décimale
+Afin de pouvoir transformer les chaines de charactere ASCII de ma liste en Décimale
 
 ## Story 4
 *** 
-Transformez les Décimale en Binaire
+En tant que Développeur je veux transformer des decimales en Binaire
+Afin de transformer mes Décimale en chaine de charactere Binaire
 
 ## Story 5
 *** 
-Transformez la liste en une chaine de charactere
+En tant que développeur je veux transformer une list en string
+Afin de transformer ma liste en une chaine de charactere
 
 ## Story 6
-*** 
-Découpez cette chaine de charactere en bloc de 6 bits dans une liste
+***
+En tant que développeur je veux découper des chaines de charactere
+Afin de découpez cette chaine de charactere en bloc de 6 bits dans une liste
 
 ## Story 7
 *** 
-Remplir pour que toutes les chaines de charactere soit de 6 bits
+En tant que développeur je veux ajouter des charactere dans un string
+Afin de remplir pour que toutes les chaines de charactere soit de 6 bits
 
 ## Story 8
 *** 
-Transformez les Binaires en Décimale
+En tant que développeur je veux passer du format binaire au format décimales
+Afin de transformer mes valeurs Binaires en Décimale
 
 ## Story 9
 *** 
-Decodez les valeurs Décimale en base64
+En tant que développeur je veux savoir décodez des valeurs décimale en base64
+Afin de decodez mes valeurs Décimale en base64
 
 ## Story 10
 *** 
-Transformez la liste en une chaine de character
+En tant que développeur je veux transformer ma list en string 
+Afin de transformez ma liste en une chaine de characteres
 
 ## Story 11
 *** 
-Si le nombre de charactere dans la chaine n'est pas un multiple de 8 alors remplir avec le charactere " = "
+En tant que développeur je veux ajouter des charactere dans un string 
+Afin que le nombre de charactere dans ma chaine de charactere soit de 8
