@@ -1,21 +1,30 @@
+def convert_char_to_ascii(char_to_convert):
+
+    char_ascii = []
+    for char_to_convert in char_to_convert:
+        char_ascii.append(ord(char_to_convert))
+    return char_ascii
+
 def ascii_to_binary(values_to_convert):
     """ A function ton convert ascii number into binary number
 
     :param values_to_convert: An array of value to convert
     :return: An array of binary values
     """
-    print(len(values_to_convert))
     binarys = []
     for value_to_convert in values_to_convert:
         binarys.append(format(value_to_convert, "b"))
     return binarys
 
-
-def convert_char_to_ascii(char_to_convert):
-
-    char_ascii = ord(char_to_convert)
-    return char_ascii
-
+def binary_to_octet(char_binary):
+    """change binary number to one octet
+    :param: char_binary
+    :return: octet
+    """
+    char_octet = []
+    for char_binary in char_binary:
+        char_octet.append("0" + char_binary)
+    return char_octet
 
 def string_to_bit(string_to_convert):
     """ A function ton convert a string into an array of bit
