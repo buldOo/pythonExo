@@ -33,6 +33,14 @@ def binary_to_octet(char_binary):
     return char_octet
 
 
+def binary_to_string(array):
+    string_to_return = ""
+    for index in array:
+        string_to_return = string_to_return + index
+
+    return string_to_return
+
+
 def string_to_bit(string_to_convert):
     """ A function ton convert a string into an array of bit
 

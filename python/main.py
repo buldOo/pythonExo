@@ -15,4 +15,6 @@ print("Binaries values :", binary)
 octet = functions.binary_to_octet(binary)
 print("Octet values :", octet)
 
-#
+#String
+string = functions.binary_to_string(octet)
+print("String value :", string)
