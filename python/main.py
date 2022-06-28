@@ -20,3 +20,4 @@ if __name__ == '__main__':
 
     my_input = [64, 64, 65]
     print(functions.ascii_to_binary(my_input))
+    functions.string_to_bit("1000011001110101000111111000011")
