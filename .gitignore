@@ -2,3 +2,6 @@
 venv
 .idea
 python/.idea/workspace.xml
+.DS_Store
+*.xml
+*.pyc
