@@ -1,0 +1,357 @@
+06/30/2022 11:43:24 AM START CPU analyse
+06/30/2022 11:43:26 AM CPU TIME :
+06/30/2022 11:43:26 AM scputimes(user=179418.59, nice=0.0, system=113218.54, idle=2762223.12)
+06/30/2022 11:43:26 AM CPU PERCENTAGE :
+06/30/2022 11:43:26 AM 8.7
+06/30/2022 11:43:26 AM CPU PERCENT TIME :
+06/30/2022 11:43:26 AM scputimes(user=2.1, nice=0.0, system=1.9, idle=96.0)
+06/30/2022 11:43:26 AM CPU COUNT :
+06/30/2022 11:43:26 AM 8
+06/30/2022 11:43:26 AM CPU STAT :
+06/30/2022 11:43:26 AM scpustats(ctx_switches=12729, interrupts=619847, soft_interrupts=468770334, syscalls=530673)
+06/30/2022 11:43:26 AM CPU FREQ :
+06/30/2022 11:43:26 AM scpufreq(current=2400, min=2400, max=2400)
+06/30/2022 11:43:26 AM (None, None, None, None, None, None, None, None, None, None, None, None)
+06/30/2022 11:43:26 AM STOP CPU analyse
+06/30/2022 11:43:26 AM START CPU analyse
+06/30/2022 11:43:28 AM CPU TIME :
+06/30/2022 11:43:28 AM scputimes(user=179419.15, nice=0.0, system=113219.0, idle=2762238.13)
+06/30/2022 11:43:28 AM CPU PERCENTAGE :
+06/30/2022 11:43:28 AM 5.4
+06/30/2022 11:43:28 AM CPU PERCENT TIME :
+06/30/2022 11:43:28 AM scputimes(user=1.9, nice=0.0, system=1.5, idle=96.6)
+06/30/2022 11:43:28 AM CPU COUNT :
+06/30/2022 11:43:28 AM 8
+06/30/2022 11:43:28 AM CPU STAT :
+06/30/2022 11:43:28 AM scpustats(ctx_switches=12491, interrupts=618938, soft_interrupts=468770787, syscalls=535160)
+06/30/2022 11:43:28 AM CPU FREQ :
+06/30/2022 11:43:28 AM scpufreq(current=2400, min=2400, max=2400)
+06/30/2022 11:43:28 AM (None, None, None, None, None, None, None, None, None, None, None, None)
+06/30/2022 11:43:28 AM STOP CPU analyse
+06/30/2022 11:43:28 AM START CPU analyse
+06/30/2022 11:43:30 AM CPU TIME :
+06/30/2022 11:43:30 AM scputimes(user=179419.52, nice=0.0, system=113219.33, idle=2762253.48)
+06/30/2022 11:43:30 AM CPU PERCENTAGE :
+06/30/2022 11:43:30 AM 3.0
+06/30/2022 11:43:30 AM CPU PERCENT TIME :
+06/30/2022 11:43:30 AM scputimes(user=1.7, nice=0.0, system=1.9, idle=96.4)
+06/30/2022 11:43:30 AM CPU COUNT :
+06/30/2022 11:43:30 AM 8
+06/30/2022 11:43:30 AM CPU STAT :
+06/30/2022 11:43:30 AM scpustats(ctx_switches=12696, interrupts=604541, soft_interrupts=468770948, syscalls=537718)
+06/30/2022 11:43:30 AM CPU FREQ :
+06/30/2022 11:43:30 AM scpufreq(current=2400, min=2400, max=2400)
+06/30/2022 11:43:30 AM (None, None, None, None, None, None, None, None, None, None, None, None)
+06/30/2022 11:43:30 AM STOP CPU analyse
+06/30/2022 11:43:30 AM START CPU analyse
+06/30/2022 11:43:32 AM CPU TIME :
+06/30/2022 11:43:32 AM scputimes(user=179419.8, nice=0.0, system=113219.6, idle=2762269.1)
+06/30/2022 11:43:32 AM CPU PERCENTAGE :
+06/30/2022 11:43:32 AM 4.6
+06/30/2022 11:43:32 AM CPU PERCENT TIME :
+06/30/2022 11:43:32 AM scputimes(user=1.6, nice=0.0, system=2.0, idle=96.4)
+06/30/2022 11:43:32 AM CPU COUNT :
+06/30/2022 11:43:32 AM 8
+06/30/2022 11:43:32 AM CPU STAT :
+06/30/2022 11:43:32 AM scpustats(ctx_switches=13289, interrupts=551177, soft_interrupts=468771191, syscalls=541939)
+06/30/2022 11:43:32 AM CPU FREQ :
+06/30/2022 11:43:32 AM scpufreq(current=2400, min=2400, max=2400)
+06/30/2022 11:43:32 AM (None, None, None, None, None, None, None, None, None, None, None, None)
+06/30/2022 11:43:32 AM STOP CPU analyse
+06/30/2022 11:43:32 AM START CPU analyse
+06/30/2022 11:43:34 AM CPU TIME :
+06/30/2022 11:43:34 AM scputimes(user=179420.07, nice=0.0, system=113219.99, idle=2762284.48)
+06/30/2022 11:43:34 AM CPU PERCENTAGE :
+06/30/2022 11:43:34 AM 3.9
+06/30/2022 11:43:34 AM CPU PERCENT TIME :
+06/30/2022 11:43:34 AM scputimes(user=1.6, nice=0.0, system=1.7, idle=96.6)
+06/30/2022 11:43:34 AM CPU COUNT :
+06/30/2022 11:43:34 AM 8
+06/30/2022 11:43:34 AM CPU STAT :
+06/30/2022 11:43:34 AM scpustats(ctx_switches=13311, interrupts=551177, soft_interrupts=468771397, syscalls=542350)
+06/30/2022 11:43:34 AM CPU FREQ :
+06/30/2022 11:43:34 AM scpufreq(current=2400, min=2400, max=2400)
+06/30/2022 11:43:34 AM (None, None, None, None, None, None, None, None, None, None, None, None)
+06/30/2022 11:43:34 AM STOP CPU analyse
+06/30/2022 11:43:34 AM START CPU analyse
+06/30/2022 11:43:36 AM CPU TIME :
+06/30/2022 11:43:36 AM scputimes(user=179420.38, nice=0.0, system=113220.26, idle=2762299.96)
+06/30/2022 11:43:36 AM CPU PERCENTAGE :
+06/30/2022 11:43:36 AM 3.5
+06/30/2022 11:43:36 AM CPU PERCENT TIME :
+06/30/2022 11:43:36 AM scputimes(user=1.7, nice=0.0, system=1.4, idle=96.9)
+06/30/2022 11:43:36 AM CPU COUNT :
+06/30/2022 11:43:36 AM 8
+06/30/2022 11:43:36 AM CPU STAT :
+06/30/2022 11:43:36 AM scpustats(ctx_switches=13257, interrupts=551177, soft_interrupts=468771620, syscalls=542634)
+06/30/2022 11:43:36 AM CPU FREQ :
+06/30/2022 11:43:36 AM scpufreq(current=2400, min=2400, max=2400)
+06/30/2022 11:43:36 AM (None, None, None, None, None, None, None, None, None, None, None, None)
+06/30/2022 11:43:36 AM STOP CPU analyse
+06/30/2022 11:43:36 AM START CPU analyse
+06/30/2022 11:43:38 AM CPU TIME :
+06/30/2022 11:43:38 AM scputimes(user=179420.65, nice=0.0, system=113220.52, idle=2762315.46)
+06/30/2022 11:43:38 AM CPU PERCENTAGE :
+06/30/2022 11:43:38 AM 3.2
+06/30/2022 11:43:38 AM CPU PERCENT TIME :
+06/30/2022 11:43:38 AM scputimes(user=2.1, nice=0.0, system=1.9, idle=96.0)
+06/30/2022 11:43:38 AM CPU COUNT :
+06/30/2022 11:43:38 AM 8
+06/30/2022 11:43:38 AM CPU STAT :
+06/30/2022 11:43:38 AM scpustats(ctx_switches=13123, interrupts=551177, soft_interrupts=468771911, syscalls=543025)
+06/30/2022 11:43:38 AM CPU FREQ :
+06/30/2022 11:43:38 AM scpufreq(current=2400, min=2400, max=2400)
+06/30/2022 11:43:38 AM (None, None, None, None, None, None, None, None, None, None, None, None)
+06/30/2022 11:43:38 AM STOP CPU analyse
+06/30/2022 11:43:38 AM START CPU analyse
+06/30/2022 11:43:40 AM CPU TIME :
+06/30/2022 11:43:40 AM scputimes(user=179420.94, nice=0.0, system=113220.81, idle=2762330.94)
+06/30/2022 11:43:40 AM CPU PERCENTAGE :
+06/30/2022 11:43:40 AM 3.4
+06/30/2022 11:43:40 AM CPU PERCENT TIME :
+06/30/2022 11:43:40 AM scputimes(user=2.0, nice=0.0, system=1.9, idle=96.1)
+06/30/2022 11:43:40 AM CPU COUNT :
+06/30/2022 11:43:40 AM 8
+06/30/2022 11:43:40 AM CPU STAT :
+06/30/2022 11:43:40 AM scpustats(ctx_switches=13035, interrupts=551182, soft_interrupts=468772343, syscalls=543522)
+06/30/2022 11:43:40 AM CPU FREQ :
+06/30/2022 11:43:40 AM scpufreq(current=2400, min=2400, max=2400)
+06/30/2022 11:43:40 AM (None, None, None, None, None, None, None, None, None, None, None, None)
+06/30/2022 11:43:40 AM STOP CPU analyse
+06/30/2022 11:43:40 AM START CPU analyse
+06/30/2022 11:43:42 AM CPU TIME :
+06/30/2022 11:43:42 AM scputimes(user=179421.24, nice=0.0, system=113221.09, idle=2762346.38)
+06/30/2022 11:43:42 AM CPU PERCENTAGE :
+06/30/2022 11:43:42 AM 3.6
+06/30/2022 11:43:42 AM CPU PERCENT TIME :
+06/30/2022 11:43:42 AM scputimes(user=1.7, nice=0.0, system=1.7, idle=96.5)
+06/30/2022 11:43:42 AM CPU COUNT :
+06/30/2022 11:43:42 AM 8
+06/30/2022 11:43:42 AM CPU STAT :
+06/30/2022 11:43:42 AM scpustats(ctx_switches=12713, interrupts=551182, soft_interrupts=468772669, syscalls=544444)
+06/30/2022 11:43:42 AM CPU FREQ :
+06/30/2022 11:43:42 AM scpufreq(current=2400, min=2400, max=2400)
+06/30/2022 11:43:42 AM (None, None, None, None, None, None, None, None, None, None, None, None)
+06/30/2022 11:43:42 AM STOP CPU analyse
+06/30/2022 11:43:42 AM START CPU analyse
+06/30/2022 11:43:44 AM CPU TIME :
+06/30/2022 11:43:44 AM scputimes(user=179421.52, nice=0.0, system=113221.38, idle=2762361.86)
+06/30/2022 11:43:44 AM CPU PERCENTAGE :
+06/30/2022 11:43:44 AM 3.5
+06/30/2022 11:43:44 AM CPU PERCENT TIME :
+06/30/2022 11:43:44 AM scputimes(user=2.1, nice=0.0, system=1.7, idle=96.1)
+06/30/2022 11:43:44 AM CPU COUNT :
+06/30/2022 11:43:44 AM 8
+06/30/2022 11:43:44 AM CPU STAT :
+06/30/2022 11:43:44 AM scpustats(ctx_switches=12255, interrupts=551182, soft_interrupts=468773258, syscalls=544963)
+06/30/2022 11:43:44 AM CPU FREQ :
+06/30/2022 11:43:44 AM scpufreq(current=2400, min=2400, max=2400)
+06/30/2022 11:43:44 AM (None, None, None, None, None, None, None, None, None, None, None, None)
+06/30/2022 11:43:44 AM STOP CPU analyse
+06/30/2022 02:56:07 PM START CPU analyse
+06/30/2022 02:56:17 PM CPU PERCENTAGE :
+06/30/2022 02:56:17 PM 5.5
+06/30/2022 02:56:17 PM CPU PERCENT TIME :
+06/30/2022 02:56:17 PM scputimes(user=2.2, nice=0.0, system=2.0, idle=95.8)
+06/30/2022 02:56:17 PM CPU COUNT :
+06/30/2022 02:56:17 PM 8
+06/30/2022 02:56:17 PM CPU STAT :
+06/30/2022 02:56:17 PM scpustats(ctx_switches=14427, interrupts=595228, soft_interrupts=469875916, syscalls=490256)
+06/30/2022 02:56:17 PM CPU FREQ :
+06/30/2022 02:56:17 PM scpufreq(current=2400, min=2400, max=2400)
+06/30/2022 02:56:17 PM (None, None, None, None, None, None, None, None, None, None, None)
+06/30/2022 02:56:17 PM STOP CPU analyse
+06/30/2022 02:56:17 PM START CPU analyse
+06/30/2022 02:56:27 PM CPU PERCENTAGE :
+06/30/2022 02:56:27 PM 5.1
+06/30/2022 02:56:27 PM CPU PERCENT TIME :
+06/30/2022 02:56:27 PM scputimes(user=10.5, nice=0.0, system=5.3, idle=84.2)
+06/30/2022 02:56:27 PM CPU COUNT :
+06/30/2022 02:56:27 PM 8
+06/30/2022 02:56:27 PM CPU STAT :
+06/30/2022 02:56:27 PM scpustats(ctx_switches=5704, interrupts=628014, soft_interrupts=469901631, syscalls=472468)
+06/30/2022 02:56:27 PM CPU FREQ :
+06/30/2022 02:56:27 PM scpufreq(current=2400, min=2400, max=2400)
+06/30/2022 02:56:27 PM (None, None, None, None, None, None, None, None, None, None, None)
+06/30/2022 02:56:27 PM STOP CPU analyse
+06/30/2022 02:56:27 PM START CPU analyse
+06/30/2022 03:10:16 PM START CPU analyse
+06/30/2022 03:10:24 PM CPU TIME :
+06/30/2022 03:10:24 PM scputimes(user=180257.71, nice=0.0, system=113786.12, idle=2771517.25)
+06/30/2022 03:10:24 PM CPU PERCENTAGE :
+06/30/2022 03:10:24 PM 9.7
+06/30/2022 03:10:24 PM CPU PERCENT TIME :
+06/30/2022 03:10:24 PM scputimes(user=2.1, nice=0.0, system=2.2, idle=95.6)
+06/30/2022 03:10:24 PM CPU COUNT :
+06/30/2022 03:10:24 PM 8
+06/30/2022 03:10:24 PM CPU STAT :
+06/30/2022 03:10:24 PM scpustats(ctx_switches=94789, interrupts=594133, soft_interrupts=472242704, syscalls=539284)
+06/30/2022 03:10:24 PM CPU FREQ :
+06/30/2022 03:10:24 PM scpufreq(current=2400, min=2400, max=2400)
+06/30/2022 03:11:17 PM START CPU analyse
+06/30/2022 03:11:23 PM START CPU analyse
+06/30/2022 03:12:36 PM START CPU analyse
+06/30/2022 03:13:03 PM START CPU analyse
+06/30/2022 03:13:15 PM START CPU analyse
+06/30/2022 03:13:59 PM START CPU analyse
+06/30/2022 03:13:59 PM VIRTUAL MEMORY :
+06/30/2022 03:13:59 PM svmem(total=8589934592, available=2260307968, percent=73.7, used=4694568960, free=83103744, active=2180149248, inactive=2174930944, wired=2514419712)
+06/30/2022 03:13:59 PM SWAP MEMORY
+06/30/2022 03:13:59 PM sswap(total=3758096384, used=2539913216, free=1218183168, percent=67.6, sin=247970603008, sout=2983489536)
+06/30/2022 03:13:59 PM (None, None, None, None)
+06/30/2022 03:13:59 PM STOP CPU analyse
+06/30/2022 03:13:59 PM START CPU analyse
+06/30/2022 03:13:59 PM VIRTUAL MEMORY :
+06/30/2022 03:13:59 PM svmem(total=8589934592, available=2260307968, percent=73.7, used=4694577152, free=83103744, active=2180157440, inactive=2174930944, wired=2514419712)
+06/30/2022 03:13:59 PM SWAP MEMORY
+06/30/2022 03:13:59 PM sswap(total=3758096384, used=2539913216, free=1218183168, percent=67.6, sin=247970603008, sout=2983489536)
+06/30/2022 03:13:59 PM (None, None, None, None)
+06/30/2022 03:13:59 PM STOP CPU analyse
+06/30/2022 03:13:59 PM START CPU analyse
+06/30/2022 03:13:59 PM VIRTUAL MEMORY :
+06/30/2022 03:13:59 PM svmem(total=8589934592, available=2260307968, percent=73.7, used=4694577152, free=83103744, active=2180157440, inactive=2174930944, wired=2514419712)
+06/30/2022 03:13:59 PM SWAP MEMORY
+06/30/2022 03:13:59 PM sswap(total=3758096384, used=2539913216, free=1218183168, percent=67.6, sin=247970603008, sout=2983489536)
+06/30/2022 03:13:59 PM (None, None, None, None)
+06/30/2022 03:13:59 PM STOP CPU analyse
+06/30/2022 03:13:59 PM START CPU analyse
+06/30/2022 03:13:59 PM VIRTUAL MEMORY :
+06/30/2022 03:13:59 PM svmem(total=8589934592, available=2260307968, percent=73.7, used=4694577152, free=83103744, active=2180157440, inactive=2174930944, wired=2514419712)
+06/30/2022 03:13:59 PM SWAP MEMORY
+06/30/2022 03:13:59 PM sswap(total=3758096384, used=2539913216, free=1218183168, percent=67.6, sin=247970603008, sout=2983489536)
+06/30/2022 03:13:59 PM (None, None, None, None)
+06/30/2022 03:13:59 PM STOP CPU analyse
+06/30/2022 03:13:59 PM START CPU analyse
+06/30/2022 03:13:59 PM VIRTUAL MEMORY :
+06/30/2022 03:13:59 PM svmem(total=8589934592, available=2260307968, percent=73.7, used=4694577152, free=83103744, active=2180157440, inactive=2174930944, wired=2514419712)
+06/30/2022 03:13:59 PM SWAP MEMORY
+06/30/2022 03:13:59 PM sswap(total=3758096384, used=2539913216, free=1218183168, percent=67.6, sin=247970603008, sout=2983489536)
+06/30/2022 03:13:59 PM (None, None, None, None)
+06/30/2022 03:13:59 PM STOP CPU analyse
+06/30/2022 03:13:59 PM START CPU analyse
+06/30/2022 03:13:59 PM VIRTUAL MEMORY :
+06/30/2022 03:13:59 PM svmem(total=8589934592, available=2260307968, percent=73.7, used=4694577152, free=83103744, active=2180157440, inactive=2174930944, wired=2514419712)
+06/30/2022 03:13:59 PM SWAP MEMORY
+06/30/2022 03:13:59 PM sswap(total=3758096384, used=2539913216, free=1218183168, percent=67.6, sin=247970603008, sout=2983489536)
+06/30/2022 03:13:59 PM (None, None, None, None)
+06/30/2022 03:13:59 PM STOP CPU analyse
+06/30/2022 03:13:59 PM START CPU analyse
+06/30/2022 03:13:59 PM VIRTUAL MEMORY :
+06/30/2022 03:13:59 PM svmem(total=8589934592, available=2260307968, percent=73.7, used=4694577152, free=83103744, active=2180157440, inactive=2174930944, wired=2514419712)
+06/30/2022 03:13:59 PM SWAP MEMORY
+06/30/2022 03:13:59 PM sswap(total=3758096384, used=2539913216, free=1218183168, percent=67.6, sin=247970603008, sout=2983489536)
+06/30/2022 03:13:59 PM (None, None, None, None)
+06/30/2022 03:13:59 PM STOP CPU analyse
+06/30/2022 03:13:59 PM START CPU analyse
+06/30/2022 03:13:59 PM VIRTUAL MEMORY :
+06/30/2022 03:13:59 PM svmem(total=8589934592, available=2260307968, percent=73.7, used=4694577152, free=83103744, active=2180157440, inactive=2174930944, wired=2514419712)
+06/30/2022 03:13:59 PM SWAP MEMORY
+06/30/2022 03:13:59 PM sswap(total=3758096384, used=2539913216, free=1218183168, percent=67.6, sin=247970603008, sout=2983489536)
+06/30/2022 03:13:59 PM (None, None, None, None)
+06/30/2022 03:13:59 PM STOP CPU analyse
+06/30/2022 03:13:59 PM START CPU analyse
+06/30/2022 03:13:59 PM VIRTUAL MEMORY :
+06/30/2022 03:13:59 PM svmem(total=8589934592, available=2260307968, percent=73.7, used=4694577152, free=83103744, active=2180157440, inactive=2174930944, wired=2514419712)
+06/30/2022 03:13:59 PM SWAP MEMORY
+06/30/2022 03:13:59 PM sswap(total=3758096384, used=2539913216, free=1218183168, percent=67.6, sin=247970603008, sout=2983489536)
+06/30/2022 03:13:59 PM (None, None, None, None)
+06/30/2022 03:13:59 PM STOP CPU analyse
+06/30/2022 03:13:59 PM START CPU analyse
+06/30/2022 03:13:59 PM VIRTUAL MEMORY :
+06/30/2022 03:13:59 PM svmem(total=8589934592, available=2260307968, percent=73.7, used=4694577152, free=83103744, active=2180157440, inactive=2174930944, wired=2514419712)
+06/30/2022 03:13:59 PM SWAP MEMORY
+06/30/2022 03:13:59 PM sswap(total=3758096384, used=2539913216, free=1218183168, percent=67.6, sin=247970603008, sout=2983489536)
+06/30/2022 03:13:59 PM (None, None, None, None)
+06/30/2022 03:13:59 PM STOP CPU analyse
+06/30/2022 03:14:54 PM #################################################
+06/30/2022 03:14:54 PM START CPU analyse
+06/30/2022 03:14:54 PM VIRTUAL MEMORY :
+06/30/2022 03:14:54 PM svmem(total=8589934592, available=2126671872, percent=75.2, used=4665942016, free=12972032, active=2118504448, inactive=2056642560, wired=2547437568)
+06/30/2022 03:14:54 PM SWAP MEMORY
+06/30/2022 03:14:54 PM sswap(total=3758096384, used=2472804352, free=1285292032, percent=65.8, sin=248051630080, sout=2983817216)
+06/30/2022 03:14:54 PM (None, None, None, None)
+06/30/2022 03:14:54 PM STOP CPU analyse
+06/30/2022 03:14:54 PM #################################################
+06/30/2022 03:14:54 PM #################################################
+06/30/2022 03:14:54 PM START CPU analyse
+06/30/2022 03:14:54 PM VIRTUAL MEMORY :
+06/30/2022 03:14:54 PM svmem(total=8589934592, available=2126667776, percent=75.2, used=4665946112, free=12972032, active=2118508544, inactive=2056638464, wired=2547437568)
+06/30/2022 03:14:54 PM SWAP MEMORY
+06/30/2022 03:14:54 PM sswap(total=3758096384, used=2472804352, free=1285292032, percent=65.8, sin=248051630080, sout=2983817216)
+06/30/2022 03:14:54 PM (None, None, None, None)
+06/30/2022 03:14:54 PM STOP CPU analyse
+06/30/2022 03:14:54 PM #################################################
+06/30/2022 03:14:54 PM #################################################
+06/30/2022 03:14:54 PM START CPU analyse
+06/30/2022 03:14:54 PM VIRTUAL MEMORY :
+06/30/2022 03:14:54 PM svmem(total=8589934592, available=2126667776, percent=75.2, used=4665946112, free=12972032, active=2118508544, inactive=2056638464, wired=2547437568)
+06/30/2022 03:14:54 PM SWAP MEMORY
+06/30/2022 03:14:54 PM sswap(total=3758096384, used=2472804352, free=1285292032, percent=65.8, sin=248051630080, sout=2983817216)
+06/30/2022 03:14:54 PM (None, None, None, None)
+06/30/2022 03:14:54 PM STOP CPU analyse
+06/30/2022 03:14:54 PM #################################################
+06/30/2022 03:14:54 PM #################################################
+06/30/2022 03:14:54 PM START CPU analyse
+06/30/2022 03:14:54 PM VIRTUAL MEMORY :
+06/30/2022 03:14:54 PM svmem(total=8589934592, available=2126667776, percent=75.2, used=4665946112, free=12972032, active=2118508544, inactive=2056638464, wired=2547437568)
+06/30/2022 03:14:54 PM SWAP MEMORY
+06/30/2022 03:14:54 PM sswap(total=3758096384, used=2472804352, free=1285292032, percent=65.8, sin=248051630080, sout=2983817216)
+06/30/2022 03:14:54 PM (None, None, None, None)
+06/30/2022 03:14:54 PM STOP CPU analyse
+06/30/2022 03:14:54 PM #################################################
+06/30/2022 03:14:54 PM #################################################
+06/30/2022 03:14:54 PM START CPU analyse
+06/30/2022 03:14:54 PM VIRTUAL MEMORY :
+06/30/2022 03:14:54 PM svmem(total=8589934592, available=2126667776, percent=75.2, used=4665946112, free=12972032, active=2118508544, inactive=2056638464, wired=2547437568)
+06/30/2022 03:14:54 PM SWAP MEMORY
+06/30/2022 03:14:54 PM sswap(total=3758096384, used=2472804352, free=1285292032, percent=65.8, sin=248051630080, sout=2983817216)
+06/30/2022 03:14:54 PM (None, None, None, None)
+06/30/2022 03:14:54 PM STOP CPU analyse
+06/30/2022 03:14:54 PM #################################################
+06/30/2022 03:14:54 PM #################################################
+06/30/2022 03:14:54 PM START CPU analyse
+06/30/2022 03:14:54 PM VIRTUAL MEMORY :
+06/30/2022 03:14:54 PM svmem(total=8589934592, available=2126667776, percent=75.2, used=4665946112, free=12972032, active=2118508544, inactive=2056638464, wired=2547437568)
+06/30/2022 03:14:54 PM SWAP MEMORY
+06/30/2022 03:14:54 PM sswap(total=3758096384, used=2472804352, free=1285292032, percent=65.8, sin=248051630080, sout=2983817216)
+06/30/2022 03:14:54 PM (None, None, None, None)
+06/30/2022 03:14:54 PM STOP CPU analyse
+06/30/2022 03:14:54 PM #################################################
+06/30/2022 03:14:54 PM #################################################
+06/30/2022 03:14:54 PM START CPU analyse
+06/30/2022 03:14:54 PM VIRTUAL MEMORY :
+06/30/2022 03:14:54 PM svmem(total=8589934592, available=2126667776, percent=75.2, used=4665946112, free=12972032, active=2118508544, inactive=2056638464, wired=2547437568)
+06/30/2022 03:14:54 PM SWAP MEMORY
+06/30/2022 03:14:54 PM sswap(total=3758096384, used=2472804352, free=1285292032, percent=65.8, sin=248051630080, sout=2983817216)
+06/30/2022 03:14:54 PM (None, None, None, None)
+06/30/2022 03:14:54 PM STOP CPU analyse
+06/30/2022 03:14:54 PM #################################################
+06/30/2022 03:14:54 PM #################################################
+06/30/2022 03:14:54 PM START CPU analyse
+06/30/2022 03:14:54 PM VIRTUAL MEMORY :
+06/30/2022 03:14:54 PM svmem(total=8589934592, available=2126667776, percent=75.2, used=4665946112, free=12972032, active=2118508544, inactive=2056638464, wired=2547437568)
+06/30/2022 03:14:54 PM SWAP MEMORY
+06/30/2022 03:14:54 PM sswap(total=3758096384, used=2472804352, free=1285292032, percent=65.8, sin=248051630080, sout=2983817216)
+06/30/2022 03:14:54 PM (None, None, None, None)
+06/30/2022 03:14:54 PM STOP CPU analyse
+06/30/2022 03:14:54 PM #################################################
+06/30/2022 03:14:54 PM #################################################
+06/30/2022 03:14:54 PM START CPU analyse
+06/30/2022 03:14:54 PM VIRTUAL MEMORY :
+06/30/2022 03:14:54 PM svmem(total=8589934592, available=2126667776, percent=75.2, used=4665946112, free=12972032, active=2118508544, inactive=2056638464, wired=2547437568)
+06/30/2022 03:14:54 PM SWAP MEMORY
+06/30/2022 03:14:54 PM sswap(total=3758096384, used=2472804352, free=1285292032, percent=65.8, sin=248051630080, sout=2983817216)
+06/30/2022 03:14:54 PM (None, None, None, None)
+06/30/2022 03:14:54 PM STOP CPU analyse
+06/30/2022 03:14:54 PM #################################################
+06/30/2022 03:14:54 PM #################################################
+06/30/2022 03:14:54 PM START CPU analyse
+06/30/2022 03:14:54 PM VIRTUAL MEMORY :
+06/30/2022 03:14:54 PM svmem(total=8589934592, available=2126667776, percent=75.2, used=4665946112, free=12972032, active=2118508544, inactive=2056638464, wired=2547437568)
+06/30/2022 03:14:54 PM SWAP MEMORY
+06/30/2022 03:14:54 PM sswap(total=3758096384, used=2472804352, free=1285292032, percent=65.8, sin=248051630080, sout=2983817216)
+06/30/2022 03:14:54 PM (None, None, None, None)
+06/30/2022 03:14:54 PM STOP CPU analyse
+06/30/2022 03:14:54 PM #################################################
+06/30/2022 03:16:03 PM #################################################
+06/30/2022 03:16:03 PM START CPU analyse
