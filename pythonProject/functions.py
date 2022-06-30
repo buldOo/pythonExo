@@ -2,6 +2,7 @@ import psutil
 import logging
 import time
 
+
 def get_cpu(interval):
     """
     function get cpu on your machine
@@ -18,11 +19,11 @@ def get_cpu(interval):
     logging.basicConfig(filename='stat_cpu.log', encoding='utf-8', level=logging.INFO, format='%(asctime)s %(message)s',
                         datefmt='%m/%d/%Y %I:%M:%S %p')
 
-    return logging.info("CPU TIME :"),\
-           logging.info(cpu_time),\
-           logging.info("CPU PERCENTAGE :"),\
-           logging.info(cpu_percent),\
-           logging.info("CPU PERCENT TIME :"),\
+    return logging.info("CPU TIME :"), \
+           logging.info(cpu_time), \
+           logging.info("CPU PERCENTAGE :"), \
+           logging.info(cpu_percent), \
+           logging.info("CPU PERCENT TIME :"), \
            logging.info(cpu_percent_time), \
            logging.info("CPU COUNT :"), \
            logging.info(cpu_count), \
@@ -38,21 +39,19 @@ def get_networks():
     :return:networks_stat, networks_system, networks_adrss, networks_stat_adrss
     """
     networks_stat = psutil.net_io_counters(pernic=False, nowrap=True)
-    networks_system = psutil.net_connections()
-    networks_adrss = psutil.net_if_addrs()
-    networks_stat_adrss = psutil.net_if_stats()
+    networks_adress = psutil.net_if_addrs()
+    networks_stat_adress = psutil.net_if_stats()
 
-    logging.basicConfig(filename='stat_networks.log', encoding='utf-8', level=logging.INFO, format='%(asctime)s %(message)s',
+    logging.basicConfig(filename='stat_networks.log', encoding='utf-8', level=logging.INFO,
+                        format='%(asctime)s %(message)s',
                         datefmt='%m/%d/%Y %I:%M:%S %p')
 
-    return logging.info("networks stat :"),\
-           logging.info(networks_stat),\
-           logging.info("networks system:"),\
-           logging.info(networks_system),\
-           logging.info("networks adress :"),\
-           logging.info(networks_adrss), \
+    return logging.info("networks stat :"), \
+           logging.info(networks_stat), \
+           logging.info("networks adress :"), \
+           logging.info(networks_adress), \
            logging.info("networks stat adress :"), \
-           logging.info(networks_stat_adrss)
+           logging.info(networks_stat_adress)
 
 
 def get_virtual_memory():
@@ -63,9 +62,9 @@ def get_virtual_memory():
     virtual_memory = psutil.virtual_memory()
     swap_memory = psutil.swap_memory()
 
-    return logging.info("VIRTUAL MEMORY :"),\
-           logging.info(virtual_memory),\
-           logging.info("SWAP MEMORY"),\
+    return logging.info("VIRTUAL MEMORY :"), \
+           logging.info(virtual_memory), \
+           logging.info("SWAP MEMORY"), \
            logging.info(swap_memory)
 
 
@@ -79,16 +78,27 @@ def get_sensors():
     sensors_battery = psutil.sensors_battery()
 
     return logging.info("SENSORS TEMPERATURE :"), \
-           logging.info(sensors_temperature),\
-           logging.info("SENSORS FANS :"),\
-           logging.info(sensors_fans),\
-           logging.info("SENSORS TBATTERY :"),\
+           logging.info(sensors_temperature), \
+           logging.info("SENSORS FANS :"), \
+           logging.info(sensors_fans), \
+           logging.info("SENSORS BATTERY :"), \
            logging.info(sensors_battery)
+
+
+def get_disk():
+    """
+    function to get disk opf your machine
+    :return:
+    """
+    disk_stats = psutil.disk_io_counters(perdisk=False, nowrap=True)
+
+    return logging.info("DISK STATS :"), \
+           logging.info(disk_stats)
 
 
 def get_all_params():
     get_cpu(4)
     get_networks()
     get_virtual_memory()
-    #get_sensors()
+    get_disk()
     time.sleep(4)
