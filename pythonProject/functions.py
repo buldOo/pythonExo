@@ -20,7 +20,6 @@ client = influxdb_client.InfluxDBClient(
 
 write_api = client.write_api(write_options=SYNCHRONOUS)
 
-
 logging.basicConfig(filename='stat.log', encoding='utf-8', level=logging.INFO, format='%(asctime)s %(message)s',
                     datefmt='%m/%d/%Y %I:%M:%S %p')
 
@@ -42,27 +41,71 @@ def send_networks(network):
     write_api.write(bucket=bucket, org=org, record=record)
 
 
-def get_networks():
+def send_cpu(cpu):
     """
-    function to get all network on your machine
-    :return:networks_stat, networks_system, networks_adrss, networks_stat_adrss
+
+    :param cpu:
+    :return:
     """
-    networks_stat = psutil.net_io_counters(pernic=False, nowrap=True)
-    networks_adress = psutil.net_if_addrs()
-    networks_stat_adress = psutil.net_if_stats()
+    record = (
+        Point("measurement")
+        .tag("tag", "cpu")
+        .field("user", cpu.user)
+        .field("nice", cpu.nice)
+        .field("system", cpu.system)
+        .field("idle", cpu.idle)
+    )
+    write_api.write(bucket=bucket, org=org, record=record)
 
-    logging.basicConfig(filename='stat_networks.log', encoding='utf-8', level=logging.INFO,
-                        format='%(asctime)s %(message)s',
-                        datefmt='%m/%d/%Y %I:%M:%S %p')
 
-    send_networks(networks_stat)
+def send_virtual_memory(memory):
+    """
 
-    return logging.info("networks stat :"), \
-           logging.info(networks_stat), \
-           logging.info("networks adress :"), \
-           logging.info(networks_adress), \
-           logging.info("networks stat adress :"), \
-           logging.info(networks_stat_adress)
+    :param virtual_memory:
+    :return:
+    """
+    record = (
+        Point("measurement")
+        .tag("tag", "memory")
+        .field("total memory", memory.total)
+        .field("available", memory.available)
+        .field("used", memory.used)
+        .field("percent", memory.percent)
+    )
+    write_api.write(bucket=bucket, org=org, record=record)
+
+
+"""
+def send_sensors(sensors):
+    
+
+    :param sensors:
+    :return:
+    
+    record = (
+        Point("measurement")
+        .tag("tag", "network")
+        .field("bytes_sent", sensors.)
+    )
+    write_api.write(bucket=bucket, org=org, record=record)
+"""
+
+
+def send_disk(disk):
+    """
+
+    :param disk:
+    :return:
+    """
+    record = (
+        Point("measurement")
+        .tag("tag", "disk")
+        .field("read_count", disk.read_count)
+        .field("write_count", disk.write_count)
+        .field("read_bytes", disk.read_bytes)
+        .field("write_bytes", disk.write_bytes)
+    )
+    write_api.write(bucket=bucket, org=org, record=record)
 
 
 def get_cpu(interval):
@@ -80,7 +123,7 @@ def get_cpu(interval):
 
     logging.basicConfig(filename='stat_cpu.log', encoding='utf-8', level=logging.INFO, format='%(asctime)s %(message)s',
                         datefmt='%m/%d/%Y %I:%M:%S %p')
-
+    send_cpu(cpu_time)
     return logging.info("CPU TIME :"), \
            logging.info(cpu_time), \
            logging.info("CPU PERCENTAGE :"), \
@@ -101,18 +144,17 @@ def get_networks():
     :return:networks_stat, networks_system, networks_adrss, networks_stat_adrss
     """
     networks_stat = psutil.net_io_counters(pernic=False, nowrap=True)
-    networks_system = psutil.net_connections()
     networks_adrss = psutil.net_if_addrs()
     networks_stat_adrss = psutil.net_if_stats()
 
-    logging.basicConfig(filename='stat_networks.log', encoding='utf-8', level=logging.INFO, format='%(asctime)s %(message)s',
+    logging.basicConfig(filename='stat_networks.log', encoding='utf-8', level=logging.INFO,
+                        format='%(asctime)s %(message)s',
                         datefmt='%m/%d/%Y %I:%M:%S %p')
 
-    return logging.info("networks stat :"),\
-           logging.info(networks_stat),\
-           logging.info("networks system:"),\
-           logging.info(networks_system),\
-           logging.info("networks adress :"),\
+    send_networks(networks_stat)
+    return logging.info("networks stat :"), \
+           logging.info(networks_stat), \
+           logging.info("networks adress :"), \
            logging.info(networks_adrss), \
            logging.info("networks stat adress :"), \
            logging.info(networks_stat_adrss)
@@ -126,17 +168,20 @@ def get_virtual_memory():
     virtual_memory = psutil.virtual_memory()
     swap_memory = psutil.swap_memory()
 
+    send_virtual_memory(virtual_memory)
     return logging.info("VIRTUAL MEMORY :"), \
            logging.info(virtual_memory), \
            logging.info("SWAP MEMORY"), \
            logging.info(swap_memory)
 
 
+"""
+
 def get_sensors():
-    """
+    
     function to get sensors of your machine
     :return: sensors_temperature, sensors_fans, sensors_battery
-    """
+    
     sensors_temperature = psutil.sensors_temperatures()
     sensors_fans = psutil.sensors_fans()
     sensors_battery = psutil.sensors_battery()
@@ -148,6 +193,8 @@ def get_sensors():
            logging.info("SENSORS BATTERY :"), \
            logging.info(sensors_battery)
 
+"""
+
 
 def get_disk():
     """
@@ -155,7 +202,7 @@ def get_disk():
     :return:
     """
     disk_stats = psutil.disk_io_counters(perdisk=False, nowrap=True)
-
+    send_disk(disk_stats)
     return logging.info("DISK STATS :"), \
            logging.info(disk_stats)
 
@@ -165,7 +212,8 @@ def get_all_params(interval):
         get_cpu(interval)
         get_networks()
         get_virtual_memory()
-        #get_sensors()
+        get_disk()
+        # get_sensors()
         print('loop')
         print(interval)
         time.sleep(int(interval))
