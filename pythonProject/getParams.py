@@ -96,7 +96,7 @@ def get_disk():
            logging.info(disk_stats)
 
 
-def get_all_params():
+def get_all():
     get_cpu(4)
     get_networks()
     get_virtual_memory()
