@@ -1,6 +1,68 @@
+from influxdb_client import Point
+from influxdb_client.client.write_api import SYNCHRONOUS
+import logging
+import influxdb_client
 import psutil
 import logging
 import time
+
+bucket = "influxDB"
+org = "PKMM"
+token = "KtpO_uTOFJZDeqKlmHQkKFHJwYhC5RFZmTXvdrCSn8VL-EjY9N0LLNiQ4SJXX_p5J-oKpKoW-RwWagOgpe-jvg=="
+# Store the URL of your InfluxDB instance
+url = "http://10.57.29.248:8086/"
+
+client = influxdb_client.InfluxDBClient(
+    url=url,
+    token=token,
+    org=org
+)
+
+write_api = client.write_api(write_options=SYNCHRONOUS)
+
+
+logging.basicConfig(filename='stat.log', encoding='utf-8', level=logging.INFO, format='%(asctime)s %(message)s',
+                    datefmt='%m/%d/%Y %I:%M:%S %p')
+
+
+def send_networks(network):
+    """
+
+    :param network:
+    :return:
+    """
+    record = (
+        Point("measurement")
+        .tag("tag", "network")
+        .field("bytes_sent", network.bytes_sent)
+        .field("bytes_recv", network.bytes_recv)
+        .field("packets_sent", network.packets_sent)
+        .field("packets_recv", network.packets_recv)
+    )
+    write_api.write(bucket=bucket, org=org, record=record)
+
+
+def get_networks():
+    """
+    function to get all network on your machine
+    :return:networks_stat, networks_system, networks_adrss, networks_stat_adrss
+    """
+    networks_stat = psutil.net_io_counters(pernic=False, nowrap=True)
+    networks_adress = psutil.net_if_addrs()
+    networks_stat_adress = psutil.net_if_stats()
+
+    logging.basicConfig(filename='stat_networks.log', encoding='utf-8', level=logging.INFO,
+                        format='%(asctime)s %(message)s',
+                        datefmt='%m/%d/%Y %I:%M:%S %p')
+
+    send_networks(networks_stat)
+
+    return logging.info("networks stat :"), \
+           logging.info(networks_stat), \
+           logging.info("networks adress :"), \
+           logging.info(networks_adress), \
+           logging.info("networks stat adress :"), \
+           logging.info(networks_stat_adress)
 
 
 def get_cpu(interval):
@@ -19,11 +81,11 @@ def get_cpu(interval):
     logging.basicConfig(filename='stat_cpu.log', encoding='utf-8', level=logging.INFO, format='%(asctime)s %(message)s',
                         datefmt='%m/%d/%Y %I:%M:%S %p')
 
-    return logging.info("CPU TIME :"),\
-           logging.info(cpu_time),\
-           logging.info("CPU PERCENTAGE :"),\
-           logging.info(cpu_percent),\
-           logging.info("CPU PERCENT TIME :"),\
+    return logging.info("CPU TIME :"), \
+           logging.info(cpu_time), \
+           logging.info("CPU PERCENTAGE :"), \
+           logging.info(cpu_percent), \
+           logging.info("CPU PERCENT TIME :"), \
            logging.info(cpu_percent_time), \
            logging.info("CPU COUNT :"), \
            logging.info(cpu_count), \
@@ -64,9 +126,9 @@ def get_virtual_memory():
     virtual_memory = psutil.virtual_memory()
     swap_memory = psutil.swap_memory()
 
-    return logging.info("VIRTUAL MEMORY :"),\
-           logging.info(virtual_memory),\
-           logging.info("SWAP MEMORY"),\
+    return logging.info("VIRTUAL MEMORY :"), \
+           logging.info(virtual_memory), \
+           logging.info("SWAP MEMORY"), \
            logging.info(swap_memory)
 
 
@@ -80,11 +142,22 @@ def get_sensors():
     sensors_battery = psutil.sensors_battery()
 
     return logging.info("SENSORS TEMPERATURE :"), \
-           logging.info(sensors_temperature),\
-           logging.info("SENSORS FANS :"),\
-           logging.info(sensors_fans),\
-           logging.info("SENSORS TBATTERY :"),\
+           logging.info(sensors_temperature), \
+           logging.info("SENSORS FANS :"), \
+           logging.info(sensors_fans), \
+           logging.info("SENSORS BATTERY :"), \
            logging.info(sensors_battery)
+
+
+def get_disk():
+    """
+    function to get disk opf your machine
+    :return:
+    """
+    disk_stats = psutil.disk_io_counters(perdisk=False, nowrap=True)
+
+    return logging.info("DISK STATS :"), \
+           logging.info(disk_stats)
 
 
 def get_all_params(interval):
