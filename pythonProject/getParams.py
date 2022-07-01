@@ -1,111 +1,7 @@
-from influxdb_client import Point
-from influxdb_client.client.write_api import SYNCHRONOUS
-import logging
-import influxdb_client
 import psutil
 import logging
 import time
-
-bucket = "influxDB"
-org = "PKMM"
-token = "KtpO_uTOFJZDeqKlmHQkKFHJwYhC5RFZmTXvdrCSn8VL-EjY9N0LLNiQ4SJXX_p5J-oKpKoW-RwWagOgpe-jvg=="
-# Store the URL of your InfluxDB instance
-url = "http://10.57.29.248:8086/"
-
-client = influxdb_client.InfluxDBClient(
-    url=url,
-    token=token,
-    org=org
-)
-
-write_api = client.write_api(write_options=SYNCHRONOUS)
-
-logging.basicConfig(filename='stat.log', encoding='utf-8', level=logging.INFO, format='%(asctime)s %(message)s',
-                    datefmt='%m/%d/%Y %I:%M:%S %p')
-
-
-def send_networks(network):
-    """
-
-    :param network:
-    :return:
-    """
-    record = (
-        Point("measurement")
-        .tag("tag", "network")
-        .field("bytes_sent", network.bytes_sent)
-        .field("bytes_recv", network.bytes_recv)
-        .field("packets_sent", network.packets_sent)
-        .field("packets_recv", network.packets_recv)
-    )
-    write_api.write(bucket=bucket, org=org, record=record)
-
-
-def send_cpu(cpu):
-    """
-
-    :param cpu:
-    :return:
-    """
-    record = (
-        Point("measurement")
-        .tag("tag", "cpu")
-        .field("user", cpu.user)
-        .field("nice", cpu.nice)
-        .field("system", cpu.system)
-        .field("idle", cpu.idle)
-    )
-    write_api.write(bucket=bucket, org=org, record=record)
-
-
-def send_virtual_memory(memory):
-    """
-
-    :param virtual_memory:
-    :return:
-    """
-    record = (
-        Point("measurement")
-        .tag("tag", "memory")
-        .field("total memory", memory.total)
-        .field("available", memory.available)
-        .field("used", memory.used)
-        .field("percent", memory.percent)
-    )
-    write_api.write(bucket=bucket, org=org, record=record)
-
-
-"""
-def send_sensors(sensors):
-    
-
-    :param sensors:
-    :return:
-    
-    record = (
-        Point("measurement")
-        .tag("tag", "network")
-        .field("bytes_sent", sensors.)
-    )
-    write_api.write(bucket=bucket, org=org, record=record)
-"""
-
-
-def send_disk(disk):
-    """
-
-    :param disk:
-    :return:
-    """
-    record = (
-        Point("measurement")
-        .tag("tag", "disk")
-        .field("read_count", disk.read_count)
-        .field("write_count", disk.write_count)
-        .field("read_bytes", disk.read_bytes)
-        .field("write_bytes", disk.write_bytes)
-    )
-    write_api.write(bucket=bucket, org=org, record=record)
+import influxDB
 
 
 def get_cpu(interval):
@@ -123,7 +19,8 @@ def get_cpu(interval):
 
     logging.basicConfig(filename='stat_cpu.log', encoding='utf-8', level=logging.INFO, format='%(asctime)s %(message)s',
                         datefmt='%m/%d/%Y %I:%M:%S %p')
-    send_cpu(cpu_time)
+    influxDB.send_cpu(cpu_time)
+
     return logging.info("CPU TIME :"), \
            logging.info(cpu_time), \
            logging.info("CPU PERCENTAGE :"), \
@@ -151,7 +48,7 @@ def get_networks():
                         format='%(asctime)s %(message)s',
                         datefmt='%m/%d/%Y %I:%M:%S %p')
 
-    send_networks(networks_stat)
+    influxDB.send_networks(networks_stat)
     return logging.info("networks stat :"), \
            logging.info(networks_stat), \
            logging.info("networks adress :"), \
@@ -168,7 +65,7 @@ def get_virtual_memory():
     virtual_memory = psutil.virtual_memory()
     swap_memory = psutil.swap_memory()
 
-    send_virtual_memory(virtual_memory)
+    influxDB.send_virtual_memory(virtual_memory)
     return logging.info("VIRTUAL MEMORY :"), \
            logging.info(virtual_memory), \
            logging.info("SWAP MEMORY"), \
@@ -202,7 +99,7 @@ def get_disk():
     :return:
     """
     disk_stats = psutil.disk_io_counters(perdisk=False, nowrap=True)
-    send_disk(disk_stats)
+    influxDB.send_disk(disk_stats)
     return logging.info("DISK STATS :"), \
            logging.info(disk_stats)
 
