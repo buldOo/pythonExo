@@ -1,16 +1,18 @@
-# This is a sample Python script.
+import functions
+import psutil
+import logging
+import argparse
 
-# Press Maj+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+parser = argparse.ArgumentParser(description='Définissez l\'intervalle en seconde')
+parser.add_argument('-i', '--interval', type=int, help='Valeur en seconde')
+args = parser.parse_args()
+interval = args.interval
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    for x in range(10):
+        logging.info("#################################################")
+        logging.info("START CPU analyse")
+        logging.info(functions.get_all_params(interval))
+        logging.info("STOP CPU analyse")
+        logging.info("#################################################")
