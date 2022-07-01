@@ -61,7 +61,7 @@ def send_cpu(cpu):
 def send_virtual_memory(memory):
     """
 
-    :param virtual_memory:
+    :param virtual memory:
     :return:
     """
     record = (
@@ -109,8 +109,8 @@ def send_disk(disk):
 
 
 def get_cpu(interval):
-    """
-    function get cpu on your machine
+    """function to get all cpu informations of your device
+
     :param: interval
     :return: cpu_time, cpu_percent, cpu_percent_time, cpu_count, cpu_stats, cpu_freq
     """
@@ -139,8 +139,8 @@ def get_cpu(interval):
 
 
 def get_networks():
-    """
-    function to get all network on your machine
+    """function to get all network information of your device
+
     :return:networks_stat, networks_system, networks_adrss, networks_stat_adrss
     """
     networks_stat = psutil.net_io_counters(pernic=False, nowrap=True)
@@ -161,8 +161,8 @@ def get_networks():
 
 
 def get_virtual_memory():
-    """
-    functuion to get memory on your machine
+    """function to get all memory information of your machine
+
     :return: virtual_memory, swap_memory
     """
     virtual_memory = psutil.virtual_memory()
@@ -179,7 +179,7 @@ def get_virtual_memory():
 
 def get_sensors():
     
-    function to get sensors of your machine
+    function to get all sensors information of your machine
     :return: sensors_temperature, sensors_fans, sensors_battery
     
     sensors_temperature = psutil.sensors_temperatures()
@@ -197,8 +197,8 @@ def get_sensors():
 
 
 def get_disk():
-    """
-    function to get disk opf your machine
+    """function to get all disk information of your machine
+
     :return:
     """
     disk_stats = psutil.disk_io_counters(perdisk=False, nowrap=True)
