@@ -23,7 +23,7 @@ logging.basicConfig(filename='stat.log', encoding='utf-8', level=logging.INFO, f
 
 def send_networks(network):
     """
-
+    send network to influxdb
     :param network:
     :return:
     """
@@ -40,7 +40,7 @@ def send_networks(network):
 
 def send_cpu(cpu):
     """
-
+    send cpu to influxdb
     :param cpu:
     :return:
     """
@@ -57,7 +57,7 @@ def send_cpu(cpu):
 
 def send_virtual_memory(memory):
     """
-
+    send memory to influxdb
     :param virtual_memory:
     :return:
     """
@@ -74,7 +74,7 @@ def send_virtual_memory(memory):
 
 def send_disk(disk):
     """
-
+    send disk to influxdb
     :param disk:
     :return:
     """

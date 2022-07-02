@@ -95,7 +95,7 @@ def get_sensors():
 def get_disk():
     """function to get all disk information of your machine
 
-    :return:
+    :return: disk_stats
     """
     disk_stats = psutil.disk_io_counters(perdisk=False, nowrap=True)
     influxDB.send_disk(disk_stats)
