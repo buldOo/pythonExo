@@ -1,32 +1,31 @@
-import functions
-import psutil
+import getParams
 import logging
-import influxdb_client
-from influxdb_client.client.write_api import SYNCHRONOUS
+import argparse
 
-bucket = "influxdb"
-org = "PKMM"
-token = "KtpO_uTOFJZDeqKlmHQkKFHJwYhC5RFZmTXvdrCSn8VL-EjY9N0LLNiQ4SJXX_p5J-oKpKoW-RwWagOgpe-jvg=="
-# Store the URL of your InfluxDB instance
-url="http://10.57.29.248:8086"
 
-client = influxdb_client.InfluxDBClient(
-   url=url,
-   token=token,
-   org=org
-)
+def print_hi(name):
+    # Use a breakpoint in the code line below to debug your script.
+    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
 
-write_api = client.write_api(write_options=SYNCHRONOUS)
 
-p = influxdb_client.Point("Measurment Paul").tag("location", "Paris").field("temperature", 25.3)
-write_api.write(bucket=bucket, org=org, record=p)
+# Press the green button in the gutter to run the script.
+if __name__ == '__main__':
+    print_hi('PyCharm')
 
-logging.basicConfig(filename='stat.log', encoding='utf-8', level=logging.INFO, format='%(asctime)s %(message)s', datefmt='%m/%d/%Y %I:%M:%S %p')
+# See PyCharm help at https://www.jetbrains.com/help/pycharm/
 
-for x in range(1):
+
+# argParse library command line toul to configure args
+parser = argparse.ArgumentParser(description='Définissez l\'intervalle en seconde')
+parser.add_argument('-i', '--interval', type=int, help='Valeur en seconde')
+args = parser.parse_args()
+interval = args.interval
+
+
+# write all 10s analyse machine
+for x in range(10):
     logging.info("#################################################")
-    logging.info("START analyse")
-    logging.info(functions.get_all_params())
-    logging.info("STOP analyse")
+    logging.info("START machine analyse")
+    logging.info(getParams.get_all_params(interval))
+    logging.info("STOP machine analyse")
     logging.info("#################################################")
-
